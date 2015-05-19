@@ -11,4 +11,9 @@ Password: testbuyer2
 5) Click Continue. You will be directed to a Payment Successful Page. Click 'Done'. It will show a successful if finished.
 6) Failure alerts will be thrown if any step fails.
 
-Note: There is an issue with Cross Border Origin. To run it on chrome you will have to add --user-data-dir="C:/Chrome dev session" --disable-web-security in your chrome properties and run as adminstrator.
+Note: To make the url run on chrome you need to execute 
+chrome.exe --user-data-dir="C:/Chrome dev session" --disable-web-security 
+
+from cmd prompt. There is an issue with Cross Border Origin because of which it only works in unsecured version of chrome.
+The server response from API doesn't have the header allowing the Cross Border Origin.
+The possible workaround for this in Angular is using $http.jsonp instead on $http.get. 
