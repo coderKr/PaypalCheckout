@@ -6,13 +6,13 @@ payPal.config(['$httpProvider', function($httpProvider) {
     }
 ]);
 
-payPal.controller('Shopping', ['$scope','$http','$location','$window', function($scope,$http,$location,$window) {
+payPal.controller('ShoppingCtrl', ['$scope','$http','$location','$window', function($scope,$http,$location,$window) {
   	$scope.success = false;
     $scope.invoice = {
         items: [{
-            qty: 10,
-            description: 'book',
-            cost: 9.95}]
+            qty: 2,
+            description: 'K1',
+            cost: 600}]
     };
 
     $scope.addItem = function() {
