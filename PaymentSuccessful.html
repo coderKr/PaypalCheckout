@@ -4,6 +4,10 @@
     <script src="./ShoppingCartCtrl.js"></script>
 </head>
 <body ng-app = "payPal">
+<div ng-controller="Shopping">
 <h2>Payment Successful</h2>
+<button ng-click="paymentConfirmation()">Continue</button></br>
+<h3 ng-if="success"> Successful</h3>
+</div>
 </body>
 </html>

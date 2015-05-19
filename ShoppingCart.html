@@ -29,8 +29,12 @@
             <td>Total:</td>
             <td>{{total() | currency}}</td>
         </tr>
+         <tr>
+            <td>Currency</td>
+            <td><input type="text" ng-model="currency"class="input-small"></td>
+        </tr>
     </table>
-    <button ng-click="callPayPalCheckout()"> Checkout </button>
+    <img src="https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif" ng-click="callPayPalCheckout()" align="left" style="margin-right:7px;">
 </div>
 </body>
 </html>
